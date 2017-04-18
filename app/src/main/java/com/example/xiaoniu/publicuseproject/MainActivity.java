@@ -1,6 +1,7 @@
 package com.example.xiaoniu.publicuseproject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.jaeger.library.StatusBarUtil;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
 //        setColor(MainActivity.this, getResources().getColor(R.color.colorAccent));
         setTranslucent(MainActivity.this);
+
+        /*start for float window*/
+        Button startFloatWindow = (Button) findViewById(R.id.start_float_window);
+        startFloatWindow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(MainActivity.this, FloatWindowService.class);
+                startService(intent);
+                finish();
+            }
+        });
+        /*end for float window*/
     }
 
     /**
