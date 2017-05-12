@@ -19,6 +19,9 @@
         </activity>
 
         <service android:name="com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService"></service>
+        
+        <activity android:name="com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity"
+            android:theme="@style/DayTheme"/>
     </application>
 
 </manifest>

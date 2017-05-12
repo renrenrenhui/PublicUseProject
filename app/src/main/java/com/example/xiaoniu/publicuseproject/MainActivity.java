@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
+import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.utils.UtilMoreText;
 import com.jaeger.library.StatusBarUtil;
 
@@ -53,6 +54,17 @@ public class MainActivity extends AppCompatActivity {
         tv2.setTextSize(20);
         new UtilMoreText(tv2,msg);
         /*end for more text*/
+
+        /*start for changeTheme*/
+        Button startChangeTheme = (Button) findViewById(R.id.start_change_theme);
+        startChangeTheme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ChangeThemeActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for changeTheme*/
     }
 
     /**

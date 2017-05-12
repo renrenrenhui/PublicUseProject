@@ -22,4 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
+
+    <Button
+        android:id="@+id/start_change_theme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start change theme page" >
+    </Button>
 </LinearLayout>
