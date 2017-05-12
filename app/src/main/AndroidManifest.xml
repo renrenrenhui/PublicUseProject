@@ -22,6 +22,8 @@
         
         <activity android:name="com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity"
             android:theme="@style/DayTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.theme.MDNightActivity" android:theme="@style/MDNightTheme"/>
     </application>
 
 </manifest>

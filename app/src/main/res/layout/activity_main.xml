@@ -27,6 +27,13 @@
         android:id="@+id/start_change_theme"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Start change theme page" >
+        android:text="Start change theme page1" >
+    </Button>
+
+    <Button
+        android:id="@+id/start_md_night"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="夜间模式 page1" >
     </Button>
 </LinearLayout>

@@ -11,4 +11,9 @@
     <!-- 夜间模式 -->
     <color name="black_btn_color">#aa7788</color>
     <color name="white_tx_color">#f0f0f0</color>
+
+    <!--MD night-->
+    <color name="bg_root">#D1D1D1</color>
+    <color name="btn_color">#3BB32E</color>
+    <color name="tx_color">#f0f0f0</color>
 </resources>

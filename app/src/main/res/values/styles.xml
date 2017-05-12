@@ -21,4 +21,11 @@
         <item name="btn_bg">@color/black_btn_color</item>
         <item name="text_color">@color/white_tx_color</item>
     </style>
+
+    <!--MD night-->
+    <style name="MDNightTheme" parent="Theme.AppCompat.DayNight">
+        <item name="root_view_bg">@color/bg_root</item>
+        <item name="btn_bg">@color/btn_color</item>
+        <item name="text_color">@color/tx_color</item>
+    </style>
 </resources>
