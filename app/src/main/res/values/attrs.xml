@@ -6,4 +6,14 @@
     <attr name="btn_bg" format="reference|color" />
     <attr name="text_color" format="reference|color" />
 
+    <!-- 自动调整文字大小 -->
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
 </resources>
