@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PublicUseProject.iml" filepath="$PROJECT_DIR$/PublicUseProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encrypt_lib/encrypt_lib.iml" filepath="$PROJECT_DIR$/encrypt_lib/encrypt_lib.iml" />
     </modules>
   </component>
 </project>
