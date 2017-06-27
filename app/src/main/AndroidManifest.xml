@@ -24,6 +24,9 @@
             android:theme="@style/DayTheme"/>
 
         <activity android:name="com.example.xiaoniu.publicuseproject.theme.MDNightActivity" android:theme="@style/MDNightTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

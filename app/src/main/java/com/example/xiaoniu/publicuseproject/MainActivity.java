@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
+import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
 import com.example.xiaoniu.publicuseproject.utils.UtilMoreText;
@@ -101,6 +102,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for auto textview*/
+
+        /*start for Skip Count Down*/
+        Button skipCountDown = (Button) findViewById(R.id.start_skip_count_down);
+        skipCountDown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(MainActivity.this, SkipCountDownActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for Skip Count Down*/
     }
 
     /**
