@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
@@ -113,6 +114,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for Skip Count Down*/
+
+        final FadeInTextView fadeInTextView = (FadeInTextView) findViewById(R.id.fade_in_text);
+        fadeInTextView
+                .setTextString("FadeInTextView, type text one by one......")
+                .startFadeInAnimation()
+                .setTextAnimationListener(new FadeInTextView.TextAnimationListener() {
+                    @Override
+                    public void animationFinish() {
+                        fadeInTextView.stopFadeInAnimation();
+                    }
+                });
     }
 
     /**

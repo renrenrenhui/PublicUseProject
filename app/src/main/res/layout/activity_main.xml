@@ -89,5 +89,10 @@
         android:layout_height="wrap_content"
         android:text="Start Skip Count Down" >
     </Button>
+
+    <com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView
+        android:id="@+id/fade_in_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
 </ScrollView>
