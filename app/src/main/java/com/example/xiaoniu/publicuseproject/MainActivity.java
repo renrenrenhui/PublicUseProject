@@ -22,6 +22,7 @@ import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
 import com.example.xiaoniu.publicuseproject.utils.UtilMoreText;
+import com.example.xiaoniu.publicuseproject.viewLifeCycle.ViewLifeCycleActivity;
 import com.jaeger.library.StatusBarUtil;
 
 public class MainActivity extends AppCompatActivity {
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         });
         /*end for Skip Count Down*/
 
+        /*start for fade in textview*/
         final FadeInTextView fadeInTextView = (FadeInTextView) findViewById(R.id.fade_in_text);
         fadeInTextView
                 .setTextString("FadeInTextView, type text one by one......")
@@ -125,6 +127,18 @@ public class MainActivity extends AppCompatActivity {
                         fadeInTextView.stopFadeInAnimation();
                     }
                 });
+        /*end for fade in textview*/
+
+        /*start for view life cycle*/
+        Button viewLifeCycle = (Button) findViewById(R.id.start_view_life_cycle);
+        viewLifeCycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(MainActivity.this, ViewLifeCycleActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for view life cycle*/
     }
 
     /**

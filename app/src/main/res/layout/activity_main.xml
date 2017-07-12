@@ -94,5 +94,12 @@
         android:id="@+id/fade_in_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/start_view_life_cycle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_view_life_cycle" >
+    </Button>
 </LinearLayout>
 </ScrollView>

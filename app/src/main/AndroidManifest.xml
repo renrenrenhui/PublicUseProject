@@ -27,6 +27,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".viewLifeCycle.ViewLifeCycleActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
