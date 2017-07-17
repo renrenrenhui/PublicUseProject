@@ -30,6 +30,9 @@
 
         <activity android:name=".viewLifeCycle.ViewLifeCycleActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".constraintLayout.ConstraintLayoutActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

@@ -101,5 +101,12 @@
         android:layout_height="wrap_content"
         android:text="start_view_life_cycle" >
     </Button>
+
+    <Button
+        android:id="@+id/start_constraint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_constraint_layout" >
+    </Button>
 </LinearLayout>
 </ScrollView>

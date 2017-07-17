@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
+import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
@@ -139,6 +140,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for view life cycle*/
+
+        /*start for ConstraintLayout*/
+        Button startConstraintLayout = (Button) findViewById(R.id.start_constraint_layout);
+        startConstraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(MainActivity.this, ConstraintLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for ConstraintLayout*/
     }
 
     /**
