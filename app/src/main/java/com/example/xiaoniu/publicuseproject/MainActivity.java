@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
+import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
@@ -151,6 +152,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for ConstraintLayout*/
+
+        /*start for notification*/
+        Button notification = (Button) findViewById(R.id.create_notification);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CreateNotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for notification*/
     }
 
     /**

@@ -108,5 +108,12 @@
         android:layout_height="wrap_content"
         android:text="start_constraint_layout" >
     </Button>
+
+    <Button
+        android:id="@+id/create_notification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="create_notification" >
+    </Button>
 </LinearLayout>
 </ScrollView>

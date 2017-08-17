@@ -33,6 +33,9 @@
 
         <activity android:name=".constraintLayout.ConstraintLayoutActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".notification.CreateNotificationActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
