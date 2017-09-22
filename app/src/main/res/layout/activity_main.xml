@@ -115,5 +115,12 @@
         android:layout_height="wrap_content"
         android:text="create_notification" >
     </Button>
+
+    <Button
+        android:id="@+id/start_glide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_glide" >
+    </Button>
 </LinearLayout>
 </ScrollView>

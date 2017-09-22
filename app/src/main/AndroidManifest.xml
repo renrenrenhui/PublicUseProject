@@ -3,6 +3,7 @@
     package="com.example.xiaoniu.publicuseproject">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,6 +11,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.example.xiaoniu.publicuseproject.glide.GlideConfiguration"
+            android:value="GlideModule" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +41,9 @@
             android:theme="@style/AppTheme"/>
 
         <activity android:name=".notification.CreateNotificationActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".glide.GlideActivity"
             android:theme="@style/AppTheme"/>
     </application>
 

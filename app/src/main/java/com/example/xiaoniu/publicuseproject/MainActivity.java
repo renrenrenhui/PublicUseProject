@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
+import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
@@ -163,6 +164,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for notification*/
+
+        /*start for glide*/
+        Button glide = (Button) findViewById(R.id.start_glide);
+        glide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GlideActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for glide*/
     }
 
     /**
