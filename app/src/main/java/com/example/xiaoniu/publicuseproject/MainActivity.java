@@ -20,6 +20,7 @@ import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.LruCache.PhotoWallActivity;
 import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
+import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
@@ -187,6 +188,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for lruCache*/
+
+        /*start for ViewPagerFragment*/
+        Button viewpagerFragment = (Button) findViewById(R.id.start_viewpager_fragment);
+        viewpagerFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ViewPagerFragmentActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for ViewPagerFragment*/
     }
 
     /**

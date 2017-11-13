@@ -28,4 +28,9 @@
         <item name="btn_bg">@color/btn_color</item>
         <item name="text_color">@color/tx_color</item>
     </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
 </resources>

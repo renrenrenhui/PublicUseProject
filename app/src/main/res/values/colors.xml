@@ -16,4 +16,10 @@
     <color name="bg_root">#D1D1D1</color>
     <color name="btn_color">#3BB32E</color>
     <color name="tx_color">#f0f0f0</color>
+
+    <!-- sub color -->
+    <color name="sub_color_1">#65c049</color>
+    <color name="sub_color_2">#f3c146</color>
+    <color name="sub_color_3">#4eadf8</color>
+    <color name="sub_color_4">#7887d5</color>
 </resources>
