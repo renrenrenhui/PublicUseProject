@@ -136,5 +136,12 @@
         android:layout_height="wrap_content"
         android:text="start_viewpager_fragment" >
     </Button>
+
+    <Button
+        android:id="@+id/start_clip_children"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_clip_children" >
+    </Button>
 </LinearLayout>
 </ScrollView>
