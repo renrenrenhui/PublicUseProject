@@ -143,5 +143,12 @@
         android:layout_height="wrap_content"
         android:text="start_clip_children" >
     </Button>
+
+    <Button
+        android:id="@+id/start_expandable_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_expandable_listView" >
+    </Button>
 </LinearLayout>
 </ScrollView>

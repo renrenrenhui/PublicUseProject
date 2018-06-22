@@ -16,4 +16,11 @@
         <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
         <attr name="sizeToFit" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="ExpandableGridView">
+        <attr name="group_clickable" format="boolean" />
+        <attr name="overwrite_measure" format="boolean" />
+        <attr name="vertical_spacing" format="dimension" />
+        <attr name="horizontal_spacing" format="dimension" />
+    </declare-styleable>
 </resources>

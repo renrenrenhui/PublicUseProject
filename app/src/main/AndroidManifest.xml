@@ -70,6 +70,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.clipChildren.ClipChildrenActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.ExpandableListView.ExpandableListViewActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

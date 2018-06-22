@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.xiaoniu.publicuseproject.ExpandableListView.ExpandableListViewActivity;
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.LruCache.PhotoWallActivity;
 import com.example.xiaoniu.publicuseproject.clipChildren.ClipChildrenActivity;
@@ -211,6 +212,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for lruCache*/
+
+        /*start for ExpandableListView*/
+        Button ExpandableListView = (Button) findViewById(R.id.start_expandable_listView);
+        ExpandableListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ExpandableListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for ExpandableListView*/
     }
 
     /**
