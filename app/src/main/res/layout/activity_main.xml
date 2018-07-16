@@ -150,5 +150,12 @@
         android:layout_height="wrap_content"
         android:text="start_expandable_listView" >
     </Button>
+
+    <Button
+        android:id="@+id/start_https_request"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_https_request" >
+    </Button>
 </LinearLayout>
 </ScrollView>

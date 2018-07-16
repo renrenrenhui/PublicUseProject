@@ -2,7 +2,6 @@ package com.example.xiaoniu.publicuseproject;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,12 +24,12 @@ import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
+import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
 import com.example.xiaoniu.publicuseproject.utils.UtilMoreText;
 import com.example.xiaoniu.publicuseproject.viewLifeCycle.ViewLifeCycleActivity;
-import com.jaeger.library.StatusBarUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -223,6 +222,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for ExpandableListView*/
+
+        /*start for https request*/
+        Button screenOrientation = (Button) findViewById(R.id.start_https_request);
+        screenOrientation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HttpsActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for start_https_request*/
     }
 
     /**

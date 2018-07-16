@@ -73,6 +73,11 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.ExpandableListView.ExpandableListViewActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.https.HttpsActivity"
+            android:screenOrientation="sensor"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
