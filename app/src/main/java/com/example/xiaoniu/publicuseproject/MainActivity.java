@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.xiaoniu.publicuseproject.CollapsingToolbarLayout.CollapsingToolbarLayoutActivity;
 import com.example.xiaoniu.publicuseproject.ExpandableListView.ExpandableListViewActivity;
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.LruCache.PhotoWallActivity;
@@ -233,6 +234,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for start_https_request*/
+
+        /*start for collapsingToolbarLayout*/
+        Button collapsingToolbarLayout = (Button) findViewById(R.id.collapsing_toolbar_layout);
+        collapsingToolbarLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CollapsingToolbarLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for collapsingToolbarLayout*/
     }
 
     /**

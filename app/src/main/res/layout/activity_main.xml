@@ -157,5 +157,12 @@
         android:layout_height="wrap_content"
         android:text="start_https_request" >
     </Button>
+
+    <Button
+        android:id="@+id/collapsing_toolbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="collapsing_toolbar_layout" >
+    </Button>
 </LinearLayout>
 </ScrollView>

@@ -33,4 +33,9 @@
         <item name="android:textSize">14sp</item>
         <item name="textAllCaps">false</item>
     </style>
+
+    <style name="CollapsingToolbarLayoutTheme" parent="Theme.AppCompat.Light.NoActionBar" type="text/css">
+        <item name="colorPrimary">#269fe2</item>
+        <item name="colorPrimaryDark">#3A5FCD</item>
+    </style>
 </resources>

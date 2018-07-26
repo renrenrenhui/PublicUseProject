@@ -78,6 +78,9 @@
             android:screenOrientation="sensor"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.CollapsingToolbarLayout.CollapsingToolbarLayoutActivity"
+            android:theme="@style/CollapsingToolbarLayoutTheme"/>
     </application>
 
 </manifest>
