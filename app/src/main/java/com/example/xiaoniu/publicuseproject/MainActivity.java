@@ -26,6 +26,7 @@ import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
+import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
@@ -245,6 +246,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for collapsingToolbarLayout*/
+
+        /*start for pickerView*/
+        Button pickerView = (Button) findViewById(R.id.picker);
+        pickerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PickerActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for pickerView*/
     }
 
     /**

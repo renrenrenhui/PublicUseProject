@@ -81,6 +81,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.CollapsingToolbarLayout.CollapsingToolbarLayoutActivity"
             android:theme="@style/CollapsingToolbarLayoutTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.picker.PickerActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
