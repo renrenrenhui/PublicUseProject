@@ -4,4 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="image_thumbnail_size">160dp</dimen>
     <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="picker_text_size">10sp</dimen>
 </resources>

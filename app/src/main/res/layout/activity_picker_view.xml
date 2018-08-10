@@ -1,3 +1,8 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_layout"
@@ -68,4 +73,45 @@
         android:layout_height="wrap_content"
         android:onClick="onTimePicker"
         android:text="时间选择" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.example.xiaoniu.publicuseproject.picker.HeartRateGraphView
+        android:id="@+id/heart"
+        android:background="@color/black_btn_color"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </com.example.xiaoniu.publicuseproject.picker.HeartRateGraphView>
+
+    <com.example.xiaoniu.publicuseproject.picker.ChartView
+        android:id="@+id/chartview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        app:bgcolor="#ffffff"
+        app:interval="50dp"
+        app:isScroll="false"
+        app:linecolor="#02bbb7"
+        app:xylinecolor="#e2e2e2"
+        app:xylinewidth="1dp"
+        app:xytextcolor="#7e7e7e"
+        app:xytextsize="12sp" />
+    <com.example.xiaoniu.publicuseproject.picker.MyBarChartView
+        android:id="@+id/mybarCharView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:bar_color="#f9e5c9"
+        app:bottom_line_color="#ededed"
+        app:bottom_text_color="#939393"
+        app:top_text_color="#939393" />
 </LinearLayout>
+</ScrollView>
