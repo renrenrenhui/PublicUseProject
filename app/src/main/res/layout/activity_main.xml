@@ -171,5 +171,12 @@
         android:layout_height="wrap_content"
         android:text="picker" >
     </Button>
+
+    <Button
+        android:id="@+id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="recycler_view" >
+    </Button>
 </LinearLayout>
 </ScrollView>

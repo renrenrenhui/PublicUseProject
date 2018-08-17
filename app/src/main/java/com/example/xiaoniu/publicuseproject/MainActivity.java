@@ -27,6 +27,7 @@ import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
 import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
+import com.example.xiaoniu.publicuseproject.recyclerView.RecyclerActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
@@ -257,6 +258,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for pickerView*/
+
+        /*start for recyclerView*/
+        Button recyclerView = (Button) findViewById(R.id.recycler_view);
+        recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for recyclerView*/
     }
 
     /**

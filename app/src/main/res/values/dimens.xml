@@ -5,4 +5,12 @@
     <dimen name="image_thumbnail_size">160dp</dimen>
     <dimen name="image_thumbnail_spacing">1dp</dimen>
     <dimen name="picker_text_size">10sp</dimen>
+
+    <dimen name="item_margin">16dp</dimen>
+    <dimen name="btn_shape_radius">30dp</dimen>
+    <dimen name="margin_tiny">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_normal">20dp</dimen>
+    <dimen name="margin_major">30dp</dimen>
+    <dimen name="margin_xlarge">60dp</dimen>
 </resources>

@@ -84,6 +84,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.picker.PickerActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.recyclerView.RecyclerActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
