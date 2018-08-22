@@ -31,6 +31,7 @@ import com.example.xiaoniu.publicuseproject.recyclerView.RecyclerActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
+import com.example.xiaoniu.publicuseproject.timer.TimerActivity;
 import com.example.xiaoniu.publicuseproject.utils.UtilMoreText;
 import com.example.xiaoniu.publicuseproject.viewLifeCycle.ViewLifeCycleActivity;
 
@@ -269,6 +270,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for recyclerView*/
+
+        /*start for timer*/
+        Button timerView = (Button) findViewById(R.id.timer_view);
+        timerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TimerActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for timer*/
     }
 
     /**

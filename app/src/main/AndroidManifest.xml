@@ -87,6 +87,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.recyclerView.RecyclerActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.timer.TimerActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

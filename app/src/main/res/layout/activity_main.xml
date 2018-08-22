@@ -178,5 +178,11 @@
         android:layout_height="wrap_content"
         android:text="recycler_view" >
     </Button>
+    <Button
+        android:id="@+id/timer_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="timer_view" >
+    </Button>
 </LinearLayout>
 </ScrollView>
