@@ -184,5 +184,11 @@
         android:layout_height="wrap_content"
         android:text="timer_view" >
     </Button>
+    <Button
+        android:id="@+id/tts_speech"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tts_speech" >
+    </Button>
 </LinearLayout>
 </ScrollView>

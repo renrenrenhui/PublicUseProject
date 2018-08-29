@@ -281,6 +281,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for timer*/
+
+        /*start for tts_speech*/
+        Button tts_speech = (Button) findViewById(R.id.tts_speech);
+        tts_speech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SpeechActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for tts_speech*/
     }
 
     /**
