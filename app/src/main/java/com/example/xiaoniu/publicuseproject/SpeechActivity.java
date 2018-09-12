@@ -1,6 +1,9 @@
 package com.example.xiaoniu.publicuseproject;
 
+import android.content.Context;
 import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
@@ -9,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.io.File;
@@ -21,6 +25,13 @@ public class SpeechActivity extends AppCompatActivity {
     private Button speech,record;
     private TextToSpeech textToSpeech;
     private MediaPlayer mediaPlayer = new MediaPlayer();
+    private Button down = null;
+    private Button up = null;
+    private ProgressBar pb = null;
+    private int maxVolume = 50; // 最大音量值
+    private int curVolume = 20; // 当前音量值
+    private int stepVolume = 0; // 每次调整的音量幅度
+    private AudioManager audioMgr = null; // Audio管理器，用了控制音量
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +109,35 @@ public class SpeechActivity extends AppCompatActivity {
                 }
             }
         });
+        down = (Button) findViewById(R.id.down);
+        down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                curVolume -= stepVolume;
+                if (curVolume <= 0) {
+                    curVolume = 0;
+                }
+                pb.setProgress(curVolume);
+                // 调整音量
+                adjustVolume();
+            }
+        });
+        up = (Button) findViewById(R.id.up);
+        up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                curVolume += stepVolume;
+                if (curVolume >= maxVolume) {
+                    curVolume = maxVolume;
+                }
+                pb.setProgress(curVolume);
+                // 调整音量
+                adjustVolume();
+            }
+        });
+        pb = (ProgressBar) findViewById(R.id.progress);
+        pb.setMax(maxVolume);
+        pb.setProgress(curVolume);
         initMediaPlayer();
     }
 
@@ -116,6 +156,13 @@ public class SpeechActivity extends AppCompatActivity {
         try {
 //            File file = new File(Environment.getExternalStorageDirectory(), "sound.mp3");
 //            mediaPlayer.setDataSource(file.getPath());//指定音频文件路径
+            audioMgr = (AudioManager) getSystemService(Context.AUDIO_SERVICE);//调系统音量
+            // 获取最大音乐音量
+            maxVolume = audioMgr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+            // 初始化音量大概为最大音量的1/2
+            curVolume = maxVolume / 2;
+            // 每次调整的音量大概为最大音量的1/6
+            stepVolume = maxVolume / 6;
             AssetFileDescriptor file = getResources().openRawResourceFd(R.raw.exercise_bg_music);
             mediaPlayer.setDataSource(file.getFileDescriptor(), file.getStartOffset(),
                     file.getLength());
@@ -126,4 +173,13 @@ public class SpeechActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 调整音量
+     */
+    private void adjustVolume() {
+        audioMgr.setStreamVolume(AudioManager.STREAM_MUSIC, curVolume,
+                AudioManager.FLAG_PLAY_SOUND);
+    }
+
 }
