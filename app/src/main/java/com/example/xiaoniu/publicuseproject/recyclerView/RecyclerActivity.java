@@ -5,12 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.xiaoniu.publicuseproject.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import drawthink.expandablerecyclerview.bean.RecyclerViewData;
 
 public class RecyclerActivity extends AppCompatActivity {
 
@@ -20,6 +24,7 @@ public class RecyclerActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView2;
     private ScheduleRecyclerAdapter mScheduleRecyclerAdapter;
     List<Category> lists = new ArrayList<>();
+    private List<RecyclerViewData> mDatas = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,5 +98,55 @@ public class RecyclerActivity extends AppCompatActivity {
         mRecyclerView2.addItemDecoration(new SpaceItemDecoration(getResources().getDimensionPixelSize(R.dimen.item_margin),
                 getResources().getDimensionPixelSize(R.dimen.item_margin), getResources().getDimensionPixelSize(R.dimen.item_margin),
                 getResources().getDimensionPixelSize(R.dimen.item_margin)));
+
+
+        RecyclerView mRecyclerView3 = (RecyclerView) findViewById(R.id.recycler_view3);
+        List<String> mContent= new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            mContent.add("当前的内容是：" + i);
+        }
+        mRecyclerView3.setLayoutManager(new GridLayoutManager(this, 2));
+        ContentAdapter adapter = new ContentAdapter(this, mContent);
+        HeaderAndFooterWrapper mWrapper = new HeaderAndFooterWrapper(adapter);
+        TextView tvHead1 = new TextView(this);
+        tvHead1.setText("当前是头布局1111");
+        tvHead1.setGravity(Gravity.CENTER);
+        TextView tvHead2 = new TextView(this);
+        tvHead2.setText("当前是头布局222");
+        tvHead2.setGravity(Gravity.CENTER);
+        TextView tvFoot1 = new TextView(this);
+        tvFoot1.setText("当前是尾布局1111");
+        tvFoot1.setGravity(Gravity.CENTER);
+        mWrapper.addHeaderView(tvHead1);
+        mWrapper.addHeaderView(tvHead2);
+        mWrapper.addFooterView(tvFoot1);
+        mRecyclerView3.setAdapter(mWrapper);
+
+
+
+        RecyclerView mRecyclerView4 = (RecyclerView) findViewById(R.id.recycler_view4);
+        linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        mRecyclerView4.setLayoutManager(linearLayoutManager);
+        initImages();
+        ImageAdapter imageAdapter = new ImageAdapter(this, mDatas);
+        mRecyclerView4.setAdapter(imageAdapter);
+        imageAdapter.notifyDataSetChanged();
+    }
+
+    private void initImages() {
+        mDatas.clear();
+        List<ImageBean> bean1 = new ArrayList<>();
+        List<ImageBean> bean2 = new ArrayList<>();
+        List<ImageBean> bean3 = new ArrayList<>();
+        // 每个子列表长度可以不相同
+        bean1.add(new ImageBean("Dog", R.drawable.dog));
+        bean1.add(new ImageBean("Dog", R.drawable.dog));
+        bean2.add(new ImageBean("Cat", R.drawable.cat));
+        bean3.add(new ImageBean("Bird", R.drawable.bird));
+
+        mDatas.add(new RecyclerViewData("Dog", bean1, true));
+        mDatas.add(new RecyclerViewData("Cat", bean2, true));
+        mDatas.add(new RecyclerViewData("Bird", bean3, true));
     }
 }

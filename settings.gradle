@@ -1,1 +1,1 @@
-include ':app', ':encrypt_lib'
+include ':app', ':encrypt_lib', ':expandable-recyclerview'
