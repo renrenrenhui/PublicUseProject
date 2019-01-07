@@ -190,5 +190,11 @@
         android:layout_height="wrap_content"
         android:text="tts_speech" >
     </Button>
+    <Button
+        android:id="@+id/lottery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="lottery" >
+    </Button>
 </LinearLayout>
 </ScrollView>

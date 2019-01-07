@@ -95,6 +95,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.SpeechActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.lottery.LotteryActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

@@ -24,6 +24,7 @@ import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutAct
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
+import com.example.xiaoniu.publicuseproject.lottery.LotteryActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
 import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
@@ -288,6 +289,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SpeechActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for tts_speech*/
+
+        /*start for tts_speech*/
+        Button lottery = (Button) findViewById(R.id.lottery);
+        lottery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LotteryActivity.class);
                 startActivity(intent);
             }
         });
