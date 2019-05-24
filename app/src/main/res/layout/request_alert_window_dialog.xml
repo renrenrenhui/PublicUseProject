@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="24dp"
+    android:paddingTop="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="44dp"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:textColor="@color/black_tx_color"
+        android:textSize="14sp"
+        android:text="@string/permission_prompt_alert_window"/>
+    
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="118dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="ok"
+        android:textSize="16sp"
+        android:textColor="@color/white_tx_color"/>
+
+</LinearLayout>

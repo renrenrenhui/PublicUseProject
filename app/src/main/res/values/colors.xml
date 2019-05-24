@@ -22,4 +22,19 @@
     <color name="sub_color_2">#f3c146</color>
     <color name="sub_color_3">#4eadf8</color>
     <color name="sub_color_4">#7887d5</color>
+
+    <!-- Colors for the dialpad -->
+    <color name="dialer_theme_color">#0288d1</color>
+    <color name="dialer_theme_color_dark">#0277bd</color>
+    <color name="background_dialpad">#fcfcfc</color>
+    <color name="background_dialpad_pressed">#ececec</color>
+    <color name="dialpad_primary_text_color">@color/dialer_theme_color</color>
+    <color name="dialpad_secondary_text_color">#737373</color>
+    <color name="dialpad_digits_text_color">#333</color>
+    <color name="dialpad_separator_line_color">#dadada</color>
+    <color name="dialpad_icon_tint">#b3b3b3</color>
+    <color name="dialpad_voicemail_tint">#919191</color>
+    <color name="dia_signal_textcolor">#666666</color>
+    <color name="keyboard_btn_pressed_low_version">#ededed</color>
+    <color name="green_light">#00c853</color>
 </resources>

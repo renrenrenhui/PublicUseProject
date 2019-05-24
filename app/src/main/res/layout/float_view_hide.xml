@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_hide"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_hide"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

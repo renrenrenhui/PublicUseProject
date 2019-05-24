@@ -21,6 +21,7 @@ import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.LruCache.PhotoWallActivity;
 import com.example.xiaoniu.publicuseproject.clipChildren.ClipChildrenActivity;
 import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
+import com.example.xiaoniu.publicuseproject.dial.DialActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
@@ -304,6 +305,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for tts_speech*/
+
+        /*start for call*/
+        Button call = (Button) findViewById(R.id.call);
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DialActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for call*/
     }
 
     /**
