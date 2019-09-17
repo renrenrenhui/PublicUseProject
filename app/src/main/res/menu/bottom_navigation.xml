@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--id 对应navigation的id-->
+    <item
+        android:id="@id/nav_theme"
+        android:title="theme"/>
+    <item
+        android:id="@id/nav_gif"
+        android:title="gif"/>
+    <item
+        android:id="@id/nav_sticker"
+        android:title="sticker"/>
+</menu>

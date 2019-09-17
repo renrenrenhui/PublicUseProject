@@ -1,0 +1,24 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_theme"
+    android:id="@+id/nav_bottom_navigation">
+    <fragment
+        android:id="@+id/nav_theme"
+        android:name="com.example.xiaoniu.publicuseproject.navigation.ThemeFragment"
+        android:label="theme"
+        tools:layout="@layout/fragment_theme">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gif"
+        android:name="com.example.xiaoniu.publicuseproject.navigation.GifFragment"
+        android:label="gif"
+        tools:layout="@layout/fragment_gif">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_sticker"
+        android:name="com.example.xiaoniu.publicuseproject.navigation.StickerFragment"
+        android:label="sticker"
+        tools:layout="@layout/fragment_sticker">
+    </fragment>
+</navigation>

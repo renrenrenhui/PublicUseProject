@@ -26,6 +26,7 @@ import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
 import com.example.xiaoniu.publicuseproject.lottery.LotteryActivity;
+import com.example.xiaoniu.publicuseproject.navigation.NavigationTabActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
 import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
@@ -316,6 +317,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for call*/
+
+        /*start for tab navigation*/
+        Button tabNav = (Button) findViewById(R.id.tab_navigation);
+        tabNav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NavigationTabActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for tab navigation*/
     }
 
     /**

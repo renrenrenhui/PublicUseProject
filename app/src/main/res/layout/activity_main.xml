@@ -202,5 +202,12 @@
         android:layout_height="wrap_content"
         android:text="call" >
     </Button>
+
+    <Button
+        android:id="@+id/tab_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tab_navigation" >
+    </Button>
 </LinearLayout>
 </ScrollView>

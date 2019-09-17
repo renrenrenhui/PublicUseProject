@@ -109,6 +109,9 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.dial.DialpadActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.navigation.NavigationTabActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

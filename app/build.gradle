@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.example.xiaoniu.publicuseproject"
         minSdkVersion 15
-        targetSdkVersion 21
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -30,17 +30,16 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:27.1.1'
     compile 'com.jaeger.statusbaruitl:library:1.3.6'
 
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:27.1.1'
 
     compile 'com.github.bumptech.glide:glide:3.8.0-SNAPSHOT'
 
-    compile 'com.android.support:cardview-v7:24.1.0'
-    compile 'com.android.support:design:24.1.0'
-    compile 'com.android.support:appcompat-v7:24.1.0'
+    compile 'com.android.support:cardview-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
 
     compile('cn.qqtheme.framework:WheelPicker:1.5.5') {
         exclude group: 'com.android.support'
@@ -51,4 +50,7 @@ dependencies {
     compile project(':expandable-recyclerview')
 
     compile 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha01'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha01'
 }
