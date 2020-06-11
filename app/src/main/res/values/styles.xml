@@ -144,4 +144,9 @@
     <style name="DialpadBottomKeyNumberStyle" parent="DialpadKeyNumberStyle">
         <item name="android:layout_marginBottom">1dp</item>
     </style>
+
+    <style name="recevice_window_style">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_top</item>
+    </style>
 </resources>

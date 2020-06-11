@@ -216,5 +216,12 @@
         android:layout_height="wrap_content"
         android:text="callrecorder" >
     </Button>
+
+    <Button
+        android:id="@+id/heads_up_notification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="heads_up_notification" >
+    </Button>
 </LinearLayout>
 </ScrollView>

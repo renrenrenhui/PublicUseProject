@@ -121,6 +121,9 @@
             android:theme="@style/AppTheme"/>
         <service android:name="com.example.xiaoniu.publicuseproject.callrecorder.MediaCaptureService"
             android:foregroundServiceType="mediaProjection"></service>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.heads_up.HeadsUpActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

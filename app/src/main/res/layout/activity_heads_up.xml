@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/heads_up1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="heads_up_notification" >
+    </Button>
+
+    <Button
+        android:id="@+id/heads_up2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="diy_heads_up_notification" >
+    </Button>
+
+</LinearLayout>

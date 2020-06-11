@@ -26,6 +26,7 @@ import com.example.xiaoniu.publicuseproject.dial.DialActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
+import com.example.xiaoniu.publicuseproject.heads_up.HeadsUpActivity;
 import com.example.xiaoniu.publicuseproject.lottery.LotteryActivity;
 import com.example.xiaoniu.publicuseproject.navigation.NavigationTabActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
@@ -340,6 +341,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for tab navigation*/
+
+        /*start for tab heads_up_notification*/
+        Button headsUpNotification = (Button) findViewById(R.id.heads_up_notification);
+        headsUpNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HeadsUpActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for tab heads_up_notification*/
     }
 
     /**
