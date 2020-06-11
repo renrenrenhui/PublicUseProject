@@ -209,5 +209,12 @@
         android:layout_height="wrap_content"
         android:text="tab_navigation" >
     </Button>
+
+    <Button
+        android:id="@+id/callrecorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="callrecorder" >
+    </Button>
 </LinearLayout>
 </ScrollView>

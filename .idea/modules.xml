@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PublicUseProject.iml" filepath="$PROJECT_DIR$/PublicUseProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/PublicUseProject-app.iml" filepath="$PROJECT_DIR$/app/PublicUseProject-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encrypt_lib/PublicUseProject-encrypt_lib.iml" filepath="$PROJECT_DIR$/encrypt_lib/PublicUseProject-encrypt_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/expandable-recyclerview/PublicUseProject-expandable-recyclerview.iml" filepath="$PROJECT_DIR$/expandable-recyclerview/PublicUseProject-expandable-recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/encrypt_lib/encrypt_lib.iml" filepath="$PROJECT_DIR$/encrypt_lib/encrypt_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/expandable-recyclerview/expandable-recyclerview.iml" filepath="$PROJECT_DIR$/expandable-recyclerview/expandable-recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/persional-PublicUseProject.iml" filepath="$PROJECT_DIR$/persional-PublicUseProject.iml" />
     </modules>
   </component>
 </project>

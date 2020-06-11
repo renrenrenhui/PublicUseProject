@@ -19,6 +19,7 @@ import com.example.xiaoniu.publicuseproject.CollapsingToolbarLayout.CollapsingTo
 import com.example.xiaoniu.publicuseproject.ExpandableListView.ExpandableListViewActivity;
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.LruCache.PhotoWallActivity;
+import com.example.xiaoniu.publicuseproject.callrecorder.CallRecorderActivity;
 import com.example.xiaoniu.publicuseproject.clipChildren.ClipChildrenActivity;
 import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
 import com.example.xiaoniu.publicuseproject.dial.DialActivity;
@@ -324,6 +325,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NavigationTabActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for tab navigation*/
+
+        /*start for tab navigation*/
+        Button callrecorder = (Button) findViewById(R.id.callrecorder);
+        callrecorder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CallRecorderActivity.class);
                 startActivity(intent);
             }
         });
