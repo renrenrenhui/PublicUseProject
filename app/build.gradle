@@ -11,6 +11,10 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
     }
     buildTypes {
         release {
@@ -24,6 +28,9 @@ repositories {
     maven {
         name 'glide-snapshot'
         url 'http://oss.sonatype.org/content/repositories/snapshots'
+    }
+    flatDir {
+        dirs 'libs'
     }
 }
 
@@ -53,4 +60,11 @@ dependencies {
 
     implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha01'
     implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha01'
+
+    provided files('libs/poi-3.14-20160307.jar')
+    provided files('libs/poi-ooxml-3.14-20160307.jar')
+    provided files('libs/poi-ooxml-schemas-3.14-20160307.jar')
+
+    implementation 'com.github.zhouzhuo810:ZzExcelCreator:1.0.7'
+    implementation 'com.android.support:multidex:1.0.3'
 }

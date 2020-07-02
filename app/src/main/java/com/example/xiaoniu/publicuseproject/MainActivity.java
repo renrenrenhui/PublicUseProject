@@ -32,6 +32,7 @@ import com.example.xiaoniu.publicuseproject.navigation.NavigationTabActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
 import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
+import com.example.xiaoniu.publicuseproject.readExcel.ReadExcelActivity;
 import com.example.xiaoniu.publicuseproject.recyclerView.RecyclerActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
@@ -352,6 +353,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for tab heads_up_notification*/
+
+        /*start for readexcel*/
+        Button readExcel = (Button) findViewById(R.id.read_excel);
+        readExcel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReadExcelActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for readexcel*/
     }
 
     /**

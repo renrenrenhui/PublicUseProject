@@ -223,5 +223,12 @@
         android:layout_height="wrap_content"
         android:text="heads_up_notification" >
     </Button>
+
+    <Button
+        android:id="@+id/read_excel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="read_excel" >
+    </Button>
 </LinearLayout>
 </ScrollView>
