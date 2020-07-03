@@ -230,5 +230,12 @@
         android:layout_height="wrap_content"
         android:text="read_excel" >
     </Button>
+
+    <Button
+        android:id="@+id/google_authenication"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Google_Authenication" >
+    </Button>
 </LinearLayout>
 </ScrollView>

@@ -26,6 +26,7 @@ import com.example.xiaoniu.publicuseproject.dial.DialActivity;
 import com.example.xiaoniu.publicuseproject.floatingwidow.FloatWindowService;
 import com.example.xiaoniu.publicuseproject.fragment.ViewPagerFragmentActivity;
 import com.example.xiaoniu.publicuseproject.glide.GlideActivity;
+import com.example.xiaoniu.publicuseproject.googleAuthentication.GoogleAuthenticationActivity;
 import com.example.xiaoniu.publicuseproject.heads_up.HeadsUpActivity;
 import com.example.xiaoniu.publicuseproject.lottery.LotteryActivity;
 import com.example.xiaoniu.publicuseproject.navigation.NavigationTabActivity;
@@ -364,6 +365,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for readexcel*/
+
+        /*start for googleAuthenication*/
+        Button googleAuthenication = (Button) findViewById(R.id.google_authenication);
+        googleAuthenication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GoogleAuthenticationActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for googleAuthenication*/
     }
 
     /**
