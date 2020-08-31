@@ -30,6 +30,7 @@ import com.example.xiaoniu.publicuseproject.googleAuthentication.GoogleAuthentic
 import com.example.xiaoniu.publicuseproject.heads_up.HeadsUpActivity;
 import com.example.xiaoniu.publicuseproject.lottery.LotteryActivity;
 import com.example.xiaoniu.publicuseproject.navigation.NavigationTabActivity;
+import com.example.xiaoniu.publicuseproject.networkWatcher.NetworkWatcherActivity;
 import com.example.xiaoniu.publicuseproject.notification.CreateNotificationActivity;
 import com.example.xiaoniu.publicuseproject.https.HttpsActivity;
 import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
@@ -376,6 +377,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for googleAuthenication*/
+
+        /*start for networkWatcher*/
+        Button networkWatcher = (Button) findViewById(R.id.network_watcher);
+        networkWatcher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NetworkWatcherActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for networkWatcher*/
     }
 
     /**

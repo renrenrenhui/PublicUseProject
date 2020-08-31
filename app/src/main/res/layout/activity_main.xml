@@ -237,5 +237,12 @@
         android:layout_height="wrap_content"
         android:text="Google_Authenication" >
     </Button>
+
+    <Button
+        android:id="@+id/network_watcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="network_watcher" >
+    </Button>
 </LinearLayout>
 </ScrollView>
