@@ -52,12 +52,18 @@ public class ReadExcelActivity extends Activity {
                             String[] array;
                             for (String encodeWord : content) {
                                 array = encodeWord.split("\\.");
-                                if (array.length > 1) {
+                                if (array.length > 2) {
+                                    String word = AESUtil.decrypt(array[0], getCipherKeyFromJNI()) + " " + AESUtil.decrypt(array[1], getCipherKeyFromJNI()) + " GPA." + AESUtil.decrypt(array[2], getCipherKeyFromJNI());
+                                    Log.e("encodeWord1: " , encodeWord + "  " + word);
+                                    decodeList.add(word);
+                                } else if (array.length > 1) {
                                     String word = AESUtil.decrypt(array[0], getCipherKeyFromJNI()) + " GPA." + AESUtil.decrypt(array[1], getCipherKeyFromJNI());
-                                    Log.e("encodeWord: " , encodeWord + "  " + word);
+                                    Log.e("encodeWord2: " , encodeWord + "  " + word);
                                     decodeList.add(word);
                                 } else {
-                                    Log.e("encodeWord: " , "encodeWord");
+                                    String word = AESUtil.decrypt(array[0], getCipherKeyFromJNI());
+                                    Log.e("encodeWord3: " , encodeWord + "  " + word);
+                                    decodeList.add(word);
                                 }
                             }
                         } else {
