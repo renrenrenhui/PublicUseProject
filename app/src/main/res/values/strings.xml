@@ -25,4 +25,10 @@
     <string name="dialog_phone_call_prohibited_message" msgid="4313552620858880999">Can\'t call this number</string>
     <string name="activity_not_available">No app for that on this device</string>
     <string name="config_prohibited_phone_number_regexp"></string>
+
+    <string name="switch_language_1">friend</string>
+    <string name="switch_language_2">love</string>
+    <string name="switch_language_3">happy</string>
+    <string name="switch_language_to_chinese">switch language to chinese</string>
+    <string name="switch_language_to_english">switch language to english</string>
 </resources>

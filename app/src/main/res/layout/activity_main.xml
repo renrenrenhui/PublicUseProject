@@ -244,5 +244,12 @@
         android:layout_height="wrap_content"
         android:text="network_watcher" >
     </Button>
+
+    <Button
+        android:id="@+id/switch_language"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="switch_language" >
+    </Button>
 </LinearLayout>
 </ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="switch_language_1">朋友</string>
+    <string name="switch_language_2">爱情</string>
+    <string name="switch_language_3">快乐</string>
+    <string name="switch_language_to_chinese">切到中文</string>
+    <string name="switch_language_to_english">切到英文</string>
+</resources>

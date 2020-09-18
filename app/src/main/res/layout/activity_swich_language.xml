@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_chinese"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_language_to_chinese" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_english"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_language_to_english" >
+    </Button>
+
+</LinearLayout>

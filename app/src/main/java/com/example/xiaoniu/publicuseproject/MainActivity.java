@@ -37,6 +37,7 @@ import com.example.xiaoniu.publicuseproject.picker.PickerActivity;
 import com.example.xiaoniu.publicuseproject.readExcel.ReadExcelActivity;
 import com.example.xiaoniu.publicuseproject.recyclerView.RecyclerActivity;
 import com.example.xiaoniu.publicuseproject.skipcountdown.SkipCountDownActivity;
+import com.example.xiaoniu.publicuseproject.switchLanguage.SwichLanguageActivity;
 import com.example.xiaoniu.publicuseproject.theme.ChangeThemeActivity;
 import com.example.xiaoniu.publicuseproject.theme.MDNightActivity;
 import com.example.xiaoniu.publicuseproject.timer.TimerActivity;
@@ -388,6 +389,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for networkWatcher*/
+
+        /*start for switchLanguage*/
+        Button switchLanguage = (Button) findViewById(R.id.switch_language);
+        switchLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SwichLanguageActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*end for switchLanguage*/
     }
 
     /**
