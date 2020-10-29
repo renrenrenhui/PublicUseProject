@@ -3,6 +3,7 @@ package com.example.xiaoniu.publicuseproject;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,11 +15,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.xiaoniu.publicuseproject.CollapsingToolbarLayout.CollapsingToolbarLayoutActivity;
 import com.example.xiaoniu.publicuseproject.ExpandableListView.ExpandableListViewActivity;
 import com.example.xiaoniu.publicuseproject.FadeInTextView.FadeInTextView;
 import com.example.xiaoniu.publicuseproject.LruCache.PhotoWallActivity;
+import com.example.xiaoniu.publicuseproject.accessibilityService.MyAccessibilityService;
+import com.example.xiaoniu.publicuseproject.backgroundService.CallRecordService;
+import com.example.xiaoniu.publicuseproject.backgroundService.Utils;
 import com.example.xiaoniu.publicuseproject.callrecorder.CallRecorderActivity;
 import com.example.xiaoniu.publicuseproject.clipChildren.ClipChildrenActivity;
 import com.example.xiaoniu.publicuseproject.constraintLayout.ConstraintLayoutActivity;
@@ -400,6 +405,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /*end for switchLanguage*/
+
+        /*start for startBackgroundService*/
+        Button startBackgroundService = (Button) findViewById(R.id.start_background_service);
+        startBackgroundService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this,"need base permission!!!", Toast.LENGTH_SHORT).show();
+                CallRecordService.startCallRecorderService(MainActivity.this);
+                boolean hasAccessibilityPermission = Utils.hasAccessibilityServicePermission(MainActivity.this, MyAccessibilityService.class);
+                if (!hasAccessibilityPermission) {
+                    Intent theintent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                    theintent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivityForResult(theintent, 1000);
+                } else {
+//                    finish();
+                    Toast.makeText(MainActivity.this,"call now!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        /*end for startBackgroundService*/
     }
 
     /**

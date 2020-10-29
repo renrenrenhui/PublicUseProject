@@ -5,6 +5,9 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
+
+import com.example.xiaoniu.publicuseproject.utils.Logger;
+
 import java.util.Locale;
 
 /**
@@ -25,6 +28,8 @@ public class MultiLanguageApp extends Application {
         this.mAppContext = getApplicationContext();
         //注册Activity生命周期监听回调，此部分一定加上，因为有些版本不加的话多语言切换不回来
         registerActivityLifecycleCallbacks(callbacks);
+
+        Logger.setDebugMode(true);
     }
 
     ActivityLifecycleCallbacks callbacks = new ActivityLifecycleCallbacks() {

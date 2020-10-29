@@ -145,6 +145,17 @@
 
         <activity android:name="com.example.xiaoniu.publicuseproject.switchLanguage.SwichLanguageActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.xiaoniu.publicuseproject.backgroundService.BackgroundActivity"
+            android:theme="@style/AppTheme"/>
+
+        <service android:name="com.example.xiaoniu.publicuseproject.backgroundService.CallRecordService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.android.service.SoundRecordingService" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
